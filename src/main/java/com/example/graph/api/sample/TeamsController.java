@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/")
+@CrossOrigin
 public class TeamsController {
 
     @PostMapping
