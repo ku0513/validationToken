@@ -9,6 +9,11 @@ import javax.servlet.http.HttpServletRequest;
 @CrossOrigin
 public class TeamsController {
 
+    @GetMapping
+    public String sayHello() {
+        return "Hello";
+    }
+
     @PostMapping
     public String replyToken(HttpServletRequest request) {
         String jsonString = request.getParameter("validationToken");
